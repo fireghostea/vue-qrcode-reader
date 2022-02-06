@@ -53,7 +53,6 @@ export const keepScanning = (videoElement, options) => {
         const detectedCodes = await barcodeDetector.detect(videoElement);
         const { content, location, imageData } = adaptOldFormat(detectedCodes)
         alert(content);
-        sehshse
         if (content !== null) {
           detectHandler({ content, location, imageData });
         }
